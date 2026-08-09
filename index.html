@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Goncalo Miranda Portfolio" />
+    <link rel="icon" type="image/x-icon" href="/laptop.svg" />
+    <link rel="canonical" href="https://gmiranda.github.io" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Goncalo Miranda</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="#" class="link">GM.DEV</a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about center">
+        <h1>Hi, I am <span class="about__name">Goncalo Miranda.</span></h1>
+        <h2 class="about__role">Staff Engineer focused on Architecture, Platforms & AI</h2>
+        <p class="about__desc">
+          I help engineering teams solve complex technical problems by designing scalable systems, evolving engineering platforms, and turning emerging technologies into practical solutions. My work spans distributed systems, cloud architecture, developer experience, and AI engineering.
+        </p>
+
+        <div class="about__contact center">
+          <a href="gsm_resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/goncalomiranda"
+            aria-label="github"
+            class="link link--icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/goncalo-miranda-91626612/"
+            aria-label="linkedin"
+            class="link link--icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <article class="project">
+            <h3>LVF Project</h3>
+            <p class="project__description">
+              I created a responsive, user-friendly website for a mortgage broker,
+              simplifying client interaction and improving access to financial
+              services through a streamlined interface.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Bootstrap 5</li>
+              <li class="project__stack-item">Node</li>
+            </ul>
+
+            <a
+              href="https://www.lvf.pt"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </article>
+
+          <article class="project">
+            <h3>Request Documentation</h3>
+            <p class="project__description">
+              A secure document collection platform that generates unique,
+              time-limited links for each customer so they can upload requested
+              files or complete intake flows. It tracks progress by required
+              document slots, enforces consent rules, and updates request status
+              as submissions are completed.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Node.js</li>
+              <li class="project__stack-item">Express</li>
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">TypeScript</li>
+            </ul>
+
+            <a
+              href="https://github.com/goncalomiranda/requestdocumentation"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </article>
+
+          <article class="project">
+            <h3>Agent Orchestrator</h3>
+            <p class="project__description">
+              Co-built an AI software factory that
+              orchestrates planning, approval, and code execution workflows.
+              It combines agentic orchestration with structured work plans,
+              then uses Goose-driven coding runs to implement tasks, run checks,
+              and produce traceable delivery summaries.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">LangChain</li>
+              <li class="project__stack-item">LangGraph</li>
+              <li class="project__stack-item">Goose</li>
+              <li class="project__stack-item">LiteLLM</li>
+            </ul>
+
+            <a
+              href="https://github.com/ngbank/ngb-agent-orchestrator"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__groups">
+          <article class="skill-group">
+            <h3 class="skill-group__title">Architecture &amp; Engineering</h3>
+            <ul class="skill-group__list">
+              <li class="skill-chip">Software Architecture</li>
+              <li class="skill-chip">Distributed Systems</li>
+              <li class="skill-chip">Microservices</li>
+              <li class="skill-chip">API Design &amp; Development</li>
+              <li class="skill-chip">Event-Driven Architecture</li>
+              <li class="skill-chip">Domain-Driven Design</li>
+              <li class="skill-chip">Technical Strategy &amp; Engineering Standards</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">AI &amp; Developer Productivity</h3>
+            <ul class="skill-group__list">
+              <li class="skill-chip">AI Engineering</li>
+              <li class="skill-chip">LLM &amp; AI Agent Architecture</li>
+              <li class="skill-chip">AI-Assisted Software Development</li>
+              <li class="skill-chip">LLM Orchestration</li>
+              <li class="skill-chip">Developer Experience (DevEx)</li>
+              <li class="skill-chip">Internal Developer Platforms (IDP)</li>
+              <li class="skill-chip">Engineering Productivity</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">Cloud &amp; Platform Engineering</h3>
+            <ul class="skill-group__list">
+              <li class="skill-chip">Cloud Architecture</li>
+              <li class="skill-chip">Kubernetes</li>
+              <li class="skill-chip">Azure</li>
+              <li class="skill-chip">Platform Engineering</li>
+              <li class="skill-chip">CI/CD</li>
+              <li class="skill-chip">Observability</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">Backend &amp; Integration</h3>
+            <ul class="skill-group__list">
+              <li class="skill-chip">Java</li>
+              <li class="skill-chip">Spring Boot</li>
+              <li class="skill-chip">Node.js</li>
+              <li class="skill-chip">REST &amp; OpenAPI</li>
+              <li class="skill-chip">GraphQL</li>
+              <li class="skill-chip">Event-Driven Systems</li>
+              <li class="skill-chip">MuleSoft</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3 class="skill-group__title">Engineering Practices</h3>
+            <ul class="skill-group__list">
+              <li class="skill-chip">Trunk-Based Development</li>
+              <li class="skill-chip">Feature Flags</li>
+              <li class="skill-chip">Continuous Delivery</li>
+              <li class="skill-chip">Automated Testing</li>
+              <li class="skill-chip">Reliability &amp; Resilience</li>
+              <li class="skill-chip">Engineering Governance</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a
+          href="https://www.linkedin.com/in/gon%C3%A7alo-miranda-91626612/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="btn btn--outline">Let's connect</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved
+      </p>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
