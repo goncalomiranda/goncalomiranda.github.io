@@ -1,0 +1,40 @@
+title: "Goncalo Miranda | Staff Engineer"
+description: "Goncalo Miranda is a Staff Engineer focused on software architecture, engineering platforms, and AI. Explore his projects, skills, and experience."
+url: "https://goncalomiranda.github.io"
+baseurl: ""
+
+author:
+  name: "Goncalo Miranda"
+  github: "https://github.com/goncalomiranda"
+  linkedin: "https://www.linkedin.com/in/goncalo-miranda-91626612/"
+
+permalink: /blog/:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      og_type: "article"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - README.md
+  - .github
+  - .copilot

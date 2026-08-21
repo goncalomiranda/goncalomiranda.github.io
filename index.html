@@ -1,101 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Goncalo Miranda is a Staff Engineer focused on software architecture, engineering platforms, and AI. Explore his projects, skills, and experience."
-    />
-    <link rel="icon" type="image/x-icon" href="laptop.svg" />
-    <link rel="canonical" href="https://goncalomiranda.github.io/" />
-    <meta
-      name="google-site-verification"
-      content="ZIU2uOD1eCLb_OkRI0wxzAQbK0BYk3BtZKm_Mrec1Gc"
-    />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://goncalomiranda.github.io/" />
-    <meta property="og:title" content="Goncalo Miranda | Staff Engineer" />
-    <meta
-      property="og:description"
-      content="Goncalo Miranda is a Staff Engineer focused on software architecture, engineering platforms, and AI. Explore his projects, skills, and experience."
-    />
-    <meta property="og:image" content="https://goncalomiranda.github.io/laptop.svg" />
-    <meta property="og:locale" content="en_US" />
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Goncalo Miranda | Staff Engineer" />
-    <meta
-      name="twitter:description"
-      content="Goncalo Miranda is a Staff Engineer focused on software architecture, engineering platforms, and AI. Explore his projects, skills, and experience."
-    />
-    <meta name="twitter:image" content="https://goncalomiranda.github.io/laptop.svg" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Goncalo Miranda | Staff Engineer - Architecture, Platforms & AI</title>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Goncalo Miranda",
-        "url": "https://goncalomiranda.github.io/",
-        "jobTitle": "Staff Engineer",
-        "description": "Staff Engineer focused on software architecture, engineering platforms, and AI.",
-        "sameAs": [
-          "https://github.com/goncalomiranda",
-          "https://www.linkedin.com/in/goncalo-miranda-91626612/"
-        ]
-      }
-    </script>
-  </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="#" class="link">GM.DEV</a>
-      </h3>
-
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
-
-    <main>
+---
+layout: default
+title: "Goncalo Miranda | Staff Engineer - Architecture, Platforms & AI"
+description: "Goncalo Miranda is a Staff Engineer focused on software architecture, engineering platforms, and AI. Explore his projects, skills, and experience."
+permalink: /
+---
       <section class="about center">
         <h1>Hi, I am <span class="about__name">Goncalo Miranda.</span></h1>
         <h2 class="about__role">Staff Engineer focused on Architecture, Platforms & AI</h2>
@@ -104,7 +12,7 @@
         </p>
 
         <div class="about__contact center">
-          <a href="gsm_resume.pdf">
+          <a href="{{ '/gsm_resume.pdf' | relative_url }}">
             <span class="btn btn--outline">Resume</span>
           </a>
 
@@ -293,26 +201,3 @@
           <span class="btn btn--outline">Let's connect</span>
         </a>
       </section>
-    </main>
-
-    <footer class="footer">
-      <p>
-        Copyright &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        All rights reserved
-      </p>
-    </footer>
-
-    <div class="scroll-container">
-      <div class="scroll-top">
-        <a aria-label="Scroll up" href="#top">
-          <i aria-hidden="true" class="fas fa-arrow-up"></i>
-        </a>
-      </div>
-    </div>
-
-    <script src="js/script.js"></script>
-  </body>
-</html>
