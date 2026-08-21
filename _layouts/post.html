@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="section post" id="post">
+  <a class="link post__back" href="{{ '/blog/' | relative_url }}">&larr; Back to Blog</a>
+
+  <h1 class="post__title">{{ page.title }}</h1>
+  <p class="post__meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+    {%- if page.tags.size > 0 %}
+    <span class="post__tags">
+      {%- for tag in page.tags %}<span class="skill-chip">{{ tag }}</span>{% endfor %}
+    </span>
+    {%- endif %}
+  </p>
+
+  <div class="post__content">
+    {{ content }}
+  </div>
+
+  <a class="link post__back post__back--bottom" href="{{ '/blog/' | relative_url }}">&larr; Back to Blog</a>
+</article>

@@ -1,0 +1,38 @@
+---
+layout: default
+title: "Blog | Goncalo Miranda"
+description: "Articles on software architecture, engineering platforms, and AI by Goncalo Miranda."
+permalink: /blog/
+---
+<section class="section blog-index" id="blog">
+  <h1 class="section__title">Blog</h1>
+  <p class="blog-index__intro">
+    Notes and write-ups on software architecture, engineering platforms, and AI.
+  </p>
+
+  <div class="blog-index__list">
+    {% for post in site.posts %}
+    <article class="blog-card">
+      <h2 class="blog-card__title">
+        <a class="link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <p class="blog-card__meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </p>
+      <p class="blog-card__excerpt">
+        {{ post.description | default: post.excerpt | strip_html | truncatewords: 40 }}
+      </p>
+      {% if post.tags.size > 0 %}
+      <ul class="blog-card__tags">
+        {% for tag in post.tags %}
+        <li class="skill-chip">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <a class="link link--nav blog-card__readmore" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+    </article>
+    {% else %}
+    <p>No posts yet. Check back soon!</p>
+    {% endfor %}
+  </div>
+</section>
