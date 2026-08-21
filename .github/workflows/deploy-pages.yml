@@ -31,6 +31,11 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
 
+      - name: Scan dependencies for known vulnerabilities
+        uses: google/osv-scanner-action@v2.5.1
+        with:
+          scan-args: --lockfile=Gemfile.lock
+
       - name: Build with Jekyll
         run: bundle exec jekyll build --destination _site
         env:
